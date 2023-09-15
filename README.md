@@ -22,5 +22,5 @@ Para los archivos, tengo esta estructura de carpeta:
 
 Y las imágenes que usé (con los nombres de archivo que les puse) se las pueden descargar de este drive:
 
-[Drive](https://drive.google.com/drive/folders/19bMMRN-o7Rb0omXYJTKDN8fl5AwpsLt6?usp=sharing)
+[Drive](https://drive.google.com/drive/folders/19bMMRN-o7Rb0omXYJTKDN8fl5AwpsLt6?usp=sharing "Drive")
 
