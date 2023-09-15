@@ -1,7 +1,12 @@
+/* Fuente importada de GoogleFonts */
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+
 * {
     margin: 0;
     box-sizing: border-box;
 }
+
 
 body {
     background-color: #FEF2E2;
@@ -10,12 +15,6 @@ body {
     display: flex;
     flex-direction: column;
     /*Esto lo hice para que me ponga el footer abajo de todo*/
-}
-
-/* Fuente descargada agregada */
-@font-face {
-    font-family: 'Grand-hotel';
-    src: url(Grand_Hotel/GrandHotel-Regular.ttf);
 }
 
 
@@ -91,7 +90,7 @@ section {
 }
 
 .titulo-centrado {
-    font-family: Grand-hotel;
+    font-family: "Grand Hotel";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -275,4 +274,3 @@ form{
     color: gray;
 }
 /* ---------------------------------------------------------- */
-
