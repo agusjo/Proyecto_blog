@@ -20,7 +20,5 @@ Estructura de cada página:
 Para los archivos, tengo esta estructura de carpeta:
 ![image](https://github.com/agusjo/Proyecto_blog/assets/145121354/6c8d1d58-53f9-45d1-a195-a41298a461d3)
 
-Y las imágenes que usé (con los nombres de archivo que les puse) se las pueden descargar de este drive:
-
-[Drive](https://drive.google.com/drive/folders/19bMMRN-o7Rb0omXYJTKDN8fl5AwpsLt6?usp=sharing "Drive")
+Y las imágenes que usé (con los nombres de archivo que les puse) se las pueden descargar de este drive: [Drive](https://drive.google.com/drive/folders/19bMMRN-o7Rb0omXYJTKDN8fl5AwpsLt6?usp=sharing "Drive")
 
