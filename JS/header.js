@@ -10,7 +10,8 @@ document.querySelector('header').innerHTML = `
         <ul class="menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="acerca-de.html">Acerca de</a></li>
-         <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="sucursales.html">Sucursales</a></li>
         </ul>
     </nav>
 `;
