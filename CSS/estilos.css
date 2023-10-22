@@ -1,0 +1,269 @@
+/* Fuente importada de GoogleFonts */
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #FEF2E2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*Esto lo hice para que me ponga el footer abajo de todo*/
+}
+
+
+/* _____________________________TARJETAS_____________________________ */
+
+section {
+    margin: 15px 0px 15px 0px;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjeta {
+    background-color: #dbdbdb;
+    max-width: 300px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.tarjeta img {
+    float: left;
+}
+
+img {
+    width: 300px;
+}
+
+.contenido {
+    padding:10px;
+}
+/* ___________________________________________________________________ */
+
+
+
+
+/* ________________________HOVER IMAGENES MAIN________________________ */
+
+.tarjeta {
+    width: 250px;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.contenedor{color:#4A3A24;}
+
+.tarjeta {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.imgYdescripcion img {
+    transition: all 0.3s linear;
+    float: left;
+    width:  250px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.tarjetaTexto {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    bottom: 40px;
+    left: 10;
+    width: 230px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.imgYdescripcion:hover .tarjetaTexto {
+    opacity: 1;
+}
+
+.imgYdescripcion:hover img {
+    opacity: 0.3;
+}
+
+/* ___________________________________________________________________ */
+
+
+
+/* ______________________________HEADER_______________________________ */
+
+.banner {
+    position: relative;
+    color: white;
+}
+
+.titulo-centrado {
+    font-family: "Grand Hotel";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 2px black;
+    font-size: 3.6vw;
+    /* Uso vw,vh, vmax o vmin para ajustar el texto al viewport (dispositivo)  */
+}
+
+/* ___________________________________________________________________ */
+
+
+
+/* ________________________BARRA DE NAVEGACIÓN________________________ */
+
+nav {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 95%;
+}
+
+.menu{
+    list-style-type: none; /*Le saco los puntos a la lista*/
+    background-color: #FF8A00;
+    margin:0;
+    padding:0;
+    overflow:hidden; /*estas últimas 3 líneas las tuve que poner para que el fondo me aparezca a lo largo de toda la pantalla*/
+}
+
+.menu li{float: left;}
+
+li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+nav a:link, nav a:visited {
+    color: #4A3A24;
+    font-size: 90%;
+    text-decoration: none;
+    /* para sacarle el subrayado a los links */
+    position: relative;
+    bottom: 2px;
+    background-color: #FF8A00;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #4A3A24;
+}
+
+/* ___________________________________________________________________ */
+
+
+
+/* ______________________________FOOTER_______________________________ */
+
+footer {
+    padding: 13px;
+    background-color: #FF8A00;
+    display: flex;
+    justify-content: center;
+    margin-top: auto; /*Para que el footer quede abajo de todo*/
+}
+
+footer a {
+    margin: 10px;
+}
+
+footer img {
+    width: 20px;
+}
+
+/* Boton de ir hacia arriba */
+#top{
+    position: fixed;
+    width: 30px;
+    right: 2%;
+    bottom: 2%;
+}
+ 
+#top img {
+    width: 30px;
+}
+
+/* ___________________________________________________________________ */
+
+
+
+/* ____________________________ACERCA DE______________________________ */
+
+.about {
+    padding: 20px;
+    max-width: 900px;
+    display: block;
+    margin: auto;
+}
+
+.about h3 {
+    margin-bottom: 10px;
+}
+
+/* Pantallas mayores a 500px */
+@media only screen and (min-width:500px) {
+    .about {
+        width: 80%;
+        max-width: 600px;
+    }
+}
+
+/* ___________________________________________________________________ */
+
+
+
+/* _____________________________CONTACTO______________________________ */
+
+form{
+    margin-bottom: 40px;
+    max-width:600px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;    
+}
+
+#mail{
+    width: 100%;
+}
+
+/*Agregué el textarea con SPAN en vez del textarea común, para que se modifique el alto automáticamente a medida que escribo */
+.textarea {
+    border: 1px solid black;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 1px 6px;
+}
+.textarea {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: both;
+    min-height: 40px;
+    line-height: 20px;
+    background-color: white;
+} 
+.textarea[contenteditable]:empty::before {
+    content: "Ingrese su comentario aquí";
+    color: gray;
+}
+
+/* ___________________________________________________________________ */
+
