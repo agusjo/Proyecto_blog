@@ -244,26 +244,9 @@ form{
     width: 100%;
 }
 
-/*Agregué el textarea con SPAN en vez del textarea común, para que se modifique el alto automáticamente a medida que escribo */
-.textarea {
-    border: 1px solid black;
-    border-radius: 3px;
-    font-family: inherit;
-    font-size: inherit;
-    padding: 1px 6px;
-}
-.textarea {
-    display: block;
+#comentario {
     width: 100%;
-    overflow: hidden;
-    resize: both;
-    min-height: 40px;
-    line-height: 20px;
-    background-color: white;
-} 
-.textarea[contenteditable]:empty::before {
-    content: "Ingrese su comentario aquí";
-    color: gray;
+    height: 100px;
 }
 
 /* ___________________________________________________________________ */
