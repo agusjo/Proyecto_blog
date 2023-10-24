@@ -48,6 +48,7 @@ img {
 .contenido {
     padding:10px;
 }
+
 /* ___________________________________________________________________ */
 
 
@@ -265,12 +266,17 @@ form{
     color: gray;
 }
 
-/*-----------------------Sucursales-------------------------*/
-.sucursal{
+/* ___________________________________________________________________ */
 
+
+
+
+/* ____________________________SUCURSALES_____________________________ */
+
+.sucursal {
     margin: 0px 10px;
-
 }
+
 .sucursales {
     padding: 20px;
     display: block;
@@ -287,6 +293,7 @@ form{
         /* max-width: 600px; */
     }
 }
+
 .sucursal-title {
     font-size: 1.2rem;
     text-align: center;
@@ -301,11 +308,7 @@ form{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    
-
 } 
-
-
  
 @media (max-width: 900px) {
     .sucursales-container {
@@ -319,6 +322,5 @@ form{
         flex-direction: column;
     }
 }  
-
 
 /* ___________________________________________________________________ */
