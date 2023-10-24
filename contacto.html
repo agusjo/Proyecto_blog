@@ -16,7 +16,8 @@
 
     <main>
         <br>
-        <form>
+        <!-- API para enviar mail con comentarios -->
+        <form action="https://formspree.io/f/xrgwjlyw" method="POST">
             <fieldset>
                 <Legend>Contáctenos</Legend>
                 <label for="nombre">Nombre: </label>
@@ -29,15 +30,15 @@
                 <input type="email" name="mail" id="mail" required>
                 <br>
                 <br>
-                <span class="textarea" role="textbox" contenteditable></span>
-                <br>
-                <input type="submit" value="Enviar comentario">
+                <textarea name="comentario" id="comentario" required placeholder="Ingrese su comentario"></textarea>
+                <br><br>
+                <input type="submit" value="Enviar comentario" id="enviar">
                 <input type="reset" value="Vaciar formulario">
-
             </fieldset>
         </form>
     </main>
 
+    <script src="JS/validaciones.js"></script>
 
     <footer>
         <script src="JS/footer.js"></script>    
