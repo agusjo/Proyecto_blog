@@ -1,0 +1,516 @@
+/* Fuente importada de GoogleFonts */
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #FEF2E2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*Esto lo hice para que me ponga el footer abajo de todo*/
+}
+
+
+/* _____________________________TARJETAS_____________________________ */
+
+section {
+    margin: 15px 0px 15px 0px;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjeta {
+    background-color: #dbdbdb;
+    max-width: 300px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.tarjeta img {
+    float: left;
+}
+
+img {
+    width: 300px;
+}
+
+.contenido {
+    padding: 10px;
+}
+
+/* ___________________________________________________________________ */
+
+
+
+
+/* ________________________HOVER IMAGENES MAIN________________________ */
+
+.tarjeta {
+    width: 250px;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.contenedor {
+    color: #4A3A24;
+}
+
+.tarjeta {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.imgYdescripcion img {
+    transition: all 0.3s linear;
+    float: left;
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.tarjetaTexto {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    bottom: 40px;
+    left: 10;
+    width: 230px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.imgYdescripcion:hover .tarjetaTexto {
+    opacity: 1;
+}
+
+.imgYdescripcion:hover img {
+    opacity: 0.3;
+}
+
+/* ___________________________________________________________________ */
+
+
+
+/* ______________________________HEADER_______________________________ */
+
+.banner {
+    position: relative;
+    color: white;
+}
+
+.titulo-centrado {
+    font-family: "Grand Hotel";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 2px black;
+    font-size: 3.6vw;
+    /* Uso vw,vh, vmax o vmin para ajustar el texto al viewport (dispositivo)  */
+}
+
+/* ___________________________________________________________________ */
+
+
+
+/* ________________________BARRA DE NAVEGACIÓN________________________ */
+
+@media only screen and (min-width:500px) {
+    /*--------------------MENuUUuu DROPDOWN---------------*/
+
+    .navbar {
+        overflow: hidden;
+        background-color: #fcc07b;
+      }
+
+      #menu-btn {
+        visibility: hidden;
+        position: absolute;
+      }
+      
+      .navbar a {
+        float: left;
+        font-size: 90%;
+        color: #4A3A24;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      .dropdown {
+        float: right;
+        overflow: hidden;
+      }
+      
+      .dropdown .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: #4A3A24;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+      
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: #79613f;
+        color: #f9f9f9;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fcc07b;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        float: none;
+        color: #4A3A24;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #79613f;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+
+}
+}
+
+/* Menú hamburguesa */
+@media only screen and (max-width:500px) {
+    .header {
+        background-color: #fcc07b;
+        box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+      }
+      
+      .header ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: #fcc07b;
+      }
+      
+      .header a, .header .dropdown {
+        display: block;
+        padding: 20px 20px;
+        border-right: 1px solid #f4f4f4;
+        text-decoration: none;
+        color: #4A3A24;
+      }
+      
+      .header a:hover,
+      .header .menu-btn:hover, .header button {
+        background-color: #79613f;
+        color: #f9f9f9;
+      }
+      
+
+      
+      /* menu */
+      
+      .header .menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+      }
+      
+      /* menu icon */
+      
+      .header .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        padding: 20px;
+        position: relative;
+        user-select: none;
+      }
+      
+      .header .menu-icon .navicon {
+        background: #333;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+      }
+      
+      .header .menu-icon .navicon:before,
+      .header .menu-icon .navicon:after {
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+      }
+      
+      .header .menu-icon .navicon:before {
+        top: 5px;
+      }
+      
+      .header .menu-icon .navicon:after {
+        top: -5px;
+      }
+      
+      /* menu btn */
+      
+      .header .menu-btn {
+        display: none;
+      }
+      
+      .header .menu-btn:checked ~ .menu {
+        max-height: 240px;
+      }
+      
+      .header .menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+      }
+      
+      .header .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+      }
+      
+      .header .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+      }
+      
+      .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+      .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+      }
+}
+
+/* ___________________________________________________________________ */
+
+
+
+/* ______________________________FOOTER_______________________________ */
+
+footer {
+    padding: 13px;
+    background-color: #fcc07b;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    /*Para que el footer quede abajo de todo*/
+}
+
+footer a {
+    margin: 10px;
+}
+
+footer img {
+    width: 20px;
+}
+
+/* Boton de ir hacia arriba */
+#top {
+    position: fixed;
+    width: 30px;
+    right: 2%;
+    bottom: 2%;
+}
+
+#top img {
+    width: 30px;
+}
+
+/* ___________________________________________________________________ */
+
+
+
+/* ____________________________ACERCA DE______________________________ */
+
+.about {
+    padding: 20px;
+    max-width: 900px;
+    display: block;
+    margin: auto;
+    color: #362b1b;
+}
+
+.about h3 {
+    margin-bottom: 10px;
+    color: #362b1b;
+}
+
+/* Pantallas mayores a 500px */
+@media only screen and (min-width:500px) {
+    .about {
+        width: 80%;
+        max-width: 600px;
+    }
+}
+
+/* ___________________________________________________________________ */
+
+
+
+/* _____________________________CONTACTO______________________________ */
+
+.contacto {
+    max-width: 500px!important;
+}
+
+#mail {
+    width: 100%;
+}
+
+/*Agregué el textarea con SPAN en vez del textarea común, para que se modifique el alto automáticamente a medida que escribo */
+.textarea {
+    border: 1px solid black;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 1px 6px;
+}
+
+.textarea {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: both;
+    min-height: 40px;
+    line-height: 20px;
+    background-color: white;
+}
+
+.textarea[contenteditable]:empty::before {
+    content: "Ingrese su comentario aquí";
+    color: gray;
+}
+
+/* ___________________________________________________________________ */
+
+
+
+
+/* ____________________________SUCURSALES_____________________________ */
+
+.sucursal {
+    margin: 0px 10px;
+}
+
+.sucursales {
+    padding: 20px;
+    display: block;
+    margin: auto;
+    color: #362b1b;
+}
+
+.sucursales h3 {
+    margin-bottom: 10px;
+    color: #362b1b;
+}
+
+@media only screen and (min-width:500px) {
+    .sucursales {
+        width: 80%;
+        /* max-width: 600px; */
+    }
+}
+
+.sucursal-title {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1rem;
+    color: #f0f0f0;
+    background: #0e0e0e;
+    box-shadow: 5px 5px 0px 0px rgb(138, 138, 138);
+}
+
+.sucursales-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+    .sucursales-container {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        flex-direction: column;
+    }
+}
+
+/* ___________________________________________________________________ */
+
+
+
+
+/* __________________________ELIMINAR PLATOS__________________________ */
+
+.eliminar {
+    padding: 20px;
+    max-width: 900px;
+    display: block;
+    margin: auto;
+    color: #362b1b;
+}
+
+.eliminar h3 {
+    margin-bottom: 10px;
+    color: #362b1b;
+}
+
+/* ___________________________________________________________________ */
+
+
+
+
+/* ______________________CARGAR/MODIFICAR PLATOS______________________ */
+
+.formularioo {
+    padding: 20px;
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    color: #362b1b;
+}
+
+.formularioo input {
+    width:100%;
+    margin-bottom: 5px;
+}
+
+/* ___________________________________________________________________ */
+
